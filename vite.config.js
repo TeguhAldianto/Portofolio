@@ -9,5 +9,10 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
-    ],
+    ], // <--- Array plugins ditutup di sini
+
+    // Konfigurasi build diletakkan di sini (sejajar dengan plugins)
+    build: {
+        outDir: 'dist',
+    },
 });
