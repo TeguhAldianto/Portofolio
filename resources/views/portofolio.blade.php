@@ -939,7 +939,7 @@
                         <p class="text-base-300 max-w-md text-lg">Beberapa proyek yang saya kerjakan sebagai bagian
                             dari tugas akhir, program studi independen, dan magang.</p>
                     </div>
-                    <a href="https://github.com/aldinamanya?tab=repositories" target="_blank"
+                    <a href="https://github.com/TeguhAldianto?tab=repositories" target="_blank"
                         class="inline-flex items-center gap-3 text-base-300 hover:text-white transition-colors mt-6 md:mt-0 group"
                         data-aos="fade-up" data-aos-delay="100">
                         <span>Lihat Repositori GitHub</span>
@@ -1127,7 +1127,7 @@
             </div>
 
             <div class="flex gap-6 text-base-400">
-                <a href="https://github.com/aldinamanya" target="_blank"
+                <a href="https://github.com/TeguhAldianto" target="_blank"
                     class="hover:text-white transition-colors duration-300" aria-label="GitHub">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path
