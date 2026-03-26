@@ -1,68 +1,52 @@
-<section id="projects" class="py-24">
+<section id="projects" class="py-24 bg-zinc-100/50 dark:bg-zinc-900/10">
     <div class="container">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16" data-aos="fade-up">
-            <div>
-                <h2 class="text-4xl md:text-6xl font-display font-extrabold text-white mb-4">
-                    Proyek <br />
-                    <span class="text-gradient-primary">Terpilih</span>
-                </h2>
-                <p class="text-base-300 max-w-md text-lg">Beberapa proyek yang saya kerjakan sebagai bagian dari tugas
-                    akhir, program studi independen, dan magang.</p>
-            </div>
+        <div class="flex justify-between items-end mb-12" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold">Selected Works.</h2>
+            <a href="https://github.com/teguhaldianto" target="_blank" class="hidden md:inline-flex text-sm font-medium hover:text-primary transition-colors">View Github →</a>
         </div>
 
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <article
-                class="group rounded-2xl glass border border-white/10 overflow-hidden transition-all duration-300 hover-lift hover:shadow-card"
-                data-aos="fade-up" data-aos-delay="200">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="{{ asset('assets/images/batitune.png') }}" alt="BATITUNE E-Commerce Platform"
-                        class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-                        loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                    <img src="{{ asset('assets/images/batitune.png') }}" alt="BATITUNE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors mb-2">BATITUNE -
-                        E-Commerce UMKM Batik</h3>
-                    <p class="text-base-300 text-sm leading-relaxed mb-4">Aplikasi e-commerce yang dikembangkan sebagai
-                        proyek akhir untuk mendukung digitalisasi UMKM batik tulis.</p>
+                    <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">BATITUNE</h3>
+                    <p class="text-sm text-zinc-500 line-clamp-2 mb-4">E-Commerce platform khusus untuk digitalisasi pemasaran UMKM pengrajin batik tulis.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">Laravel</span>
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">MySQL</span>
+                    </div>
                 </div>
-            </article>
+            </a>
 
-            <article
-                class="group rounded-2xl glass border border-white/10 overflow-hidden transition-all duration-300 hover-lift hover:shadow-card"
-                data-aos="fade-up" data-aos-delay="300">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="https://github.com/NV-Bite/.github/raw/main/assets/frame%20mockups.png"
-                        alt="NVBite Carbon Detection App"
-                        class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-                        loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
+            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative p-4 flex items-center justify-center">
+                    <img src="https://github.com/NV-Bite/.github/raw/main/assets/frame%20mockups.png" alt="NVBite" class="h-full w-auto object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors mb-2">NVBite –
-                        Deteksi Emisi Karbon</h3>
-                    <p class="text-base-300 text-sm leading-relaxed mb-4">Aplikasi Android yang dikembangkan sebagai
-                        proyek capstone Bangkit Academy 2024 untuk mendeteksi emisi karbon makanan.</p>
+                    <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">NVBite</h3>
+                    <p class="text-sm text-zinc-500 line-clamp-2 mb-4">Aplikasi Android untuk deteksi emisi karbon makanan berbasis Machine Learning (Bangkit Capstone).</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">Kotlin</span>
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">MVVM</span>
+                    </div>
                 </div>
-            </article>
+            </a>
 
-            <article
-                class="group rounded-2xl glass border border-white/10 overflow-hidden transition-all duration-300 hover-lift hover:shadow-card"
-                data-aos="fade-up" data-aos-delay="400">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="{{ asset('assets/images/logoedii.png') }}" alt="Finance Management System"
-                        class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-                        loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
+            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative flex items-center justify-center p-8">
+                    <img src="{{ asset('assets/images/logoedii.png') }}" alt="ERP Cash Management" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" loading="lazy" />
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors mb-2">Sistem
-                        Manajemen Kas Perusahaan</h3>
-                    <p class="text-base-300 text-sm leading-relaxed mb-4">Aplikasi web untuk manajemen kas internal
-                        perusahaan yang dikembangkan selama magang di PT EDI Indonesia Cabang Surabaya.</p>
+                    <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">ERP Cash Management</h3>
+                    <p class="text-sm text-zinc-500 line-clamp-2 mb-4">Sistem manajemen kas internal perusahaan berbasis web untuk PT EDI Indonesia.</p>
+                    <div class="flex gap-2">
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">Filament</span>
+                        <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">TALL</span>
+                    </div>
                 </div>
-            </article>
+            </a>
         </div>
     </div>
 </section>

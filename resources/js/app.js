@@ -10,26 +10,41 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');
     if(yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Theme Toggle
+    // -----------------------------------------------------------------
+    // THEME TOGGLE LOGIC
+    // -----------------------------------------------------------------
     const themeBtn = document.getElementById('theme-toggle');
-    const root = document.documentElement;
+    const root = document.documentElement; // Ini adalah tag <html>
+
+    const sunIcon = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>`;
+    const moonIcon = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
 
     function applyTheme(mode) {
         if (mode === 'dark' || (mode === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             root.classList.add('dark');
-            themeBtn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+            if (themeBtn) themeBtn.innerHTML = sunIcon; // Mode gelap, tampilkan Matahari untuk opsi ganti ke terang
         } else {
             root.classList.remove('dark');
-            themeBtn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>';
+            if (themeBtn) themeBtn.innerHTML = moonIcon; // Mode terang, tampilkan Bulan untuk opsi ganti ke gelap
         }
     }
 
+    // Terapkan tema awal saat halaman dimuat
     applyTheme(localStorage.getItem('theme'));
-    themeBtn?.addEventListener('click', () => {
-        const next = root.classList.contains('dark') ? 'light' : 'dark';
-        localStorage.setItem('theme', next);
-        applyTheme(next);
-    });
+
+    // Ketika tombol diklik
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const isCurrentlyDark = root.classList.contains('dark');
+            // Jika sekarang gelap, ubah ke terang. Jika terang, ubah ke gelap.
+            const nextMode = isCurrentlyDark ? 'light' : 'dark';
+
+            // Simpan pilihan dan terapkan
+            localStorage.setItem('theme', nextMode);
+            applyTheme(nextMode);
+        });
+    }
+    // -----------------------------------------------------------------
 
     // Spotlight effect
     window.spot = function(e) {
@@ -41,12 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Nav
     const menuBtn = document.getElementById('menu-toggle');
     const mobileNav = document.getElementById('mobile-nav');
-    menuBtn?.addEventListener('click', () => {
-        mobileNav.classList.toggle('hidden');
-        menuBtn.classList.toggle('text-primary');
-    });
+    if (menuBtn && mobileNav) {
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+            menuBtn.classList.toggle('text-primary');
+        });
+    }
 
-    // Navbar scroll shadow (DIPERBAIKI: Tanpa spasi di dalam shadow-[...])
+    // Navbar scroll shadow
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         navbar?.classList.toggle('shadow-[0_10px_30px_rgba(0,0,0,.25)]', window.scrollY > 10);

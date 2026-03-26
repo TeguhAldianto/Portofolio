@@ -1,99 +1,44 @@
-<section id="about" class="py-24 relative">
+<section id="about" class="py-24">
     <div class="container">
-        <div class="relative rounded-3xl p-8 md:p-12 glass border border-white/10" data-aos="fade-up">
-            <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/15 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-12" data-aos="fade-up">About Me.</h2>
 
-            <div class="relative z-10">
-                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white mb-8">Profil
-                    <span class="text-gradient-primary">Singkat</span>
-                </h2>
-
-                <div class="space-y-6 text-lg leading-relaxed text-base-200 max-w-4xl">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 glass-card p-8 md:p-10" data-aos="fade-up" data-aos-delay="100">
+                <div class="space-y-6 text-base leading-relaxed">
                     <p>
-                        Saya adalah lulusan <span class="text-white font-semibold">D4 Manajemen Informatika,
-                            Universitas Negeri Surabaya</span> dengan IPK 3,81. Fokus utama saya adalah
-                        <span class="text-primary-200 font-semibold">pengembangan aplikasi berbasis web dan
-                            mobile</span>, khususnya menggunakan PHP (Laravel, Filament, MySQL) dan Kotlin
-                        untuk Android.
+                        Lulusan <strong class="text-zinc-900 dark:text-white">D4 Manajemen Informatika, Universitas Negeri Surabaya</strong>.
+                        Ketertarikan utama saya terletak pada arsitektur sistem backend yang kokoh (menggunakan ekosistem Laravel) serta pengalaman mobile native yang mulus (Kotlin Android).
                     </p>
-
                     <p>
-                        Selama studi, saya mengikuti program <span class="text-white font-semibold">Studi
-                            Independen Bangkit Academy 2024 (Mobile Development)</span> dan terlibat dalam
-                        pengembangan proyek capstone bernama <span class="text-white font-semibold">NVBite</span>
-                        yang berfokus pada deteksi emisi karbon makanan. Saya juga menjalani magang sebagai
-                        <span class="text-white font-semibold">Pengembang Web di PT EDI Indonesia Cabang
-                            Surabaya</span> selama 6 bulan, dengan tanggung jawab merancang dan membangun
-                        aplikasi web manajemen kas perusahaan.
-                    </p>
-
-                    <p>
-                        Saya memiliki ketertarikan pada pengembangan sistem yang terstruktur, mudah dipelihara,
-                        serta pemanfaatan <span class="text-white font-semibold">Artificial Intelligence
-                            (AI)</span> untuk mendukung fungsionalitas aplikasi. Saat ini saya sedang mencari
-                        kesempatan untuk berkontribusi dalam pengembangan perangkat lunak yang inovatif dan
-                        berdampak.
+                        Pengalaman saya mencakup <strong class="text-zinc-900 dark:text-white">Bangkit Academy 2024</strong> di mana saya berfokus pada integrasi Machine Learning ke dalam aplikasi Android (NVBite), serta magang sebagai Web Developer di <strong class="text-zinc-900 dark:text-white">PT EDI Indonesia</strong> membangun sistem Enterprise Resource Planning (ERP) internal.
                     </p>
                 </div>
+                <div class="mt-8 flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300">Full-Stack Web</span>
+                    <span class="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300">Android Dev</span>
+                    <span class="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300">RESTful APIs</span>
+                </div>
+            </div>
 
-                <div class="mt-8 flex flex-wrap gap-3">
-                    <span
-                        class="px-4 py-2 rounded-xl bg-primary/10 border border-primary/20 text-primary-200 text-sm font-medium">
-                        Pengembangan Web Full-Stack
-                    </span>
-                    <span
-                        class="px-4 py-2 rounded-xl bg-accent/10 border border-accent/20 text-accent-400 text-sm font-medium">
-                        Pengembangan Aplikasi Android
-                    </span>
-                    <span
-                        class="px-4 py-2 rounded-xl bg-success/10 border border-success/20 text-success-400 text-sm font-medium">
-                        Front-End & Back-End Development
-                    </span>
-                    <span
-                        class="px-4 py-2 rounded-xl bg-success/10 border border-success/20 text-success-400 text-sm font-medium">
-                        Artificial Intelligence (AI)
-                    </span>
+            <div class="flex flex-col gap-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass-card p-6 flex-1">
+                    <h3 class="text-xs uppercase tracking-wider text-zinc-500 font-bold mb-3">Pendidikan</h3>
+                    <p class="font-bold text-zinc-900 dark:text-white">D4 Manajemen Informatika</p>
+                    <p class="text-sm mt-1">Universitas Negeri Surabaya</p>
                 </div>
 
-                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-base-200">
-                    <div class="glass rounded-2xl p-5 border border-white/10">
-                        <h3 class="text-white font-semibold mb-3 text-base">Pendidikan</h3>
-                        <p class="font-medium text-base-100">
-                            D4 Manajemen Informatika
-                        </p>
-                        <p class="text-base-300">
-                            Universitas Negeri Surabaya
-                        </p>
-                        <p class="mt-2 text-base-300">
-                            IPK: <span class="font-semibold text-white">3,81</span>
-                        </p>
-                    </div>
-
-                    <div class="glass rounded-2xl p-5 border border-white/10">
-                        <h3 class="text-white font-semibold mb-3 text-base">Penghargaan</h3>
-                        <ul class="space-y-1 list-disc list-inside">
-                            <li>Penulis terpilih pada The 2nd International Conference on Aligning
-                                Sustainability with Vocational Innovations (ICASVI 2025).</li>
-                            <li>Terlibat dalam pengembangan proyek akhir e-commerce
-                                <span class="text-base-100 font-medium">"BATITUNE"</span> untuk digitalisasi
-                                UMKM batik tulis.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="glass rounded-2xl p-5 border border-white/10">
-                        <h3 class="text-white font-semibold mb-3 text-base">Sertifikat</h3>
-                        <ul class="space-y-1 list-disc list-inside">
-                            <li>Belajar Membuat Aplikasi Android untuk Pemula</li>
-                            <li>Memulai Pemrograman dengan Kotlin</li>
-                            <li>Belajar Dasar AI</li>
-                            <li>Belajar Dasar Pemrograman Web</li>
-                            <li>Belajar Dasar Git dengan GitHub</li>
-                            <li>Pengenalan ke Logika Pemrograman (Programming Logic 101)</li>
-                            <li>ITBox Certificate</li>
-                        </ul>
-                    </div>
+                <div class="glass-card p-6 flex-1">
+                    <h3 class="text-xs uppercase tracking-wider text-zinc-500 font-bold mb-3">Sertifikasi & Penghargaan</h3>
+                    <ul class="text-sm space-y-2">
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">▹</span>
+                            <span>Penulis ICASVI 2025</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-primary mt-0.5">▹</span>
+                            <span>Bangkit Mobile Dev 2024</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -1,84 +1,69 @@
-<section class="relative min-h-[88vh] flex items-center overflow-hidden">
-    <div class="container grid lg:grid-cols-2 gap-12 items-center">
-        <div class="order-2 lg:order-1" data-aos="fade-right">
+<section class="min-h-[85vh] flex items-center relative pt-12">
+    <div class="container grid lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-7 order-2 lg:order-1" data-aos="fade-up">
             <div
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary-100 text-sm font-semibold mb-8 glass">
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 text-xs font-medium text-zinc-600 dark:text-zinc-300 mb-8 shadow-sm">
                 <span class="relative flex h-2 w-2">
                     <span
-                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                Open to Work & Collaboration
+                Available for Work
             </div>
 
-            <h1 class="text-5xl lg:text-7xl font-display font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
-                Full-Stack & <br />
-                <span class="text-gradient">Android</span><br />
-                Developer
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Software Engineer.<br />
+                <span class="text-zinc-500 dark:text-zinc-400">Builder of digital experiences.</span>
             </h1>
 
-            <p class="text-xl text-base-300/90 mb-8 max-w-xl leading-relaxed">
-                Lulusan <span class="text-white font-semibold">D4 Manajemen Informatika, Universitas Negeri
-                    Surabaya</span> dengan IPK 3,81. Memiliki keahlian dalam Pengembangan Web Full-Stack dan
-                Pengembangan Mobile.
+            <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl leading-relaxed">
+                Saya <strong class="text-zinc-900 dark:text-white font-semibold">Teguh Aldianto</strong>. Fokus pada
+                pengembangan aplikasi Web Full-Stack dan Mobile (Android) dengan arsitektur yang clean dan scalable.
             </p>
 
-            <div class="flex flex-wrap gap-4 mb-12">
-                <a href="#projects"
-                    class="relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-300 bg-linear-to-r from-primary to-accent rounded-xl hover:shadow-glow hover:-translate-y-1 group">
-                    <span class="relative z-10 flex items-center gap-2">
-                        Lihat Proyek
-                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                    </span>
-                </a>
-
-                <a href="{{ asset('assets/cv/CV_Teguh Aldianto.pdf') }}" download
-                    class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-base-100 transition-all duration-300 glass rounded-xl hover:bg-white/10 hover:text-white hover:-translate-y-1 border border-white/10 group">
-                    <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none"
+            <div class="flex flex-wrap items-center gap-4 mb-12">
+                <a href="#projects" class="btn-primary group">
+                    Lihat Proyek
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                        </path>
+                            d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="{{ asset('assets/cv/CV_Teguh Aldianto.pdf') }}" download class="btn-secondary group">
+                    <svg class="w-4 h-4 mr-2 group-hover:-translate-y-0.5 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
                     Download CV
                 </a>
             </div>
 
-            <div class="grid grid-cols-3 gap-8 border-t border-white/5 pt-8">
-                <div data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-3xl font-bold text-white mb-2"><span class="counter" data-target="3.81">0</span>
-                    </div>
-                    <div class="text-sm text-base-400 font-medium">IPK Cum Laude</div>
+            <div class="flex items-center gap-8 pt-6 border-t border-zinc-200 dark:border-white/10">
+                <div>
+                    <div class="text-2xl font-bold text-zinc-900 dark:text-white"><span class="counter"
+                            data-target="3.81">0</span></div>
+                    <div class="text-xs text-zinc-500 font-medium uppercase tracking-wider mt-1">IPK Cum Laude</div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-3xl font-bold text-white mb-2"><span class="counter" data-target="8">0</span>+
-                    </div>
-                    <div class="text-sm text-base-400 font-medium">Proyek Selesai</div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="600">
-                    <div class="text-3xl font-bold text-white mb-2">ICASVI</div>
-                    <div class="text-sm text-base-400 font-medium">Publikasi 2025</div>
+                <div>
+                    <div class="text-2xl font-bold text-zinc-900 dark:text-white"><span class="counter"
+                            data-target="8">0</span>+</div>
+                    <div class="text-xs text-zinc-500 font-medium uppercase tracking-wider mt-1">Proyek Selesai</div>
                 </div>
             </div>
         </div>
 
-        <div class="order-1 lg:order-2 relative" data-aos="fade-left" data-aos-delay="300">
+        <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end" data-aos="fade-left"
+            data-aos-delay="200">
             <div
-                class="absolute -inset-8 -z-10 rounded-[2.5rem] bg-linear-to-tr from-primary/20 to-accent/20 blur-3xl animate-pulse">
-            </div>
-            <div class="relative rounded-3xl p-4 md:p-6 glass border border-white/10 shadow-card animate-float">
-                <div class="relative overflow-hidden rounded-2xl aspect-4/5 md:aspect-square">
-                    <img src="{{ asset('assets/images/pp.JPG') }}" alt="Teguh Aldianto - Full Stack & Android Developer"
-                        loading="eager" decoding="async"
-                        class="object-cover w-full h-full will-change-transform transition-transform duration-700 hover:scale-105"
-                        onerror="this.src='{{ asset('assets/images/profile.jpg') }}'" />
-                    <div class="absolute inset-0 bg-linear-to-t from-base-950/80 via-transparent to-transparent"></div>
-                </div>
+                class="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden glass-card p-2 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <img src="{{ asset('assets/images/pp.JPG') }}" alt="Teguh Aldianto"
+                    class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                    onerror="this.src='{{ asset('assets/images/profile.jpg') }}'" />
             </div>
         </div>
+
     </div>
 </section>
