@@ -37,7 +37,7 @@
     </div>
 
     <a href="#main"
-        class="sr-only focus:not-sr-only fixed top-3 left-3 z-[9999] px-4 py-2 rounded-lg bg-base-900 text-white text-sm font-medium transition-all focus:ring-2 focus:ring-primary/50">
+        class="sr-only focus:not-sr-only fixed top-3 left-3 z-9999 px-4 py-2 rounded-lg bg-base-900 text-white text-sm font-medium transition-all focus:ring-2 focus:ring-primary/50">
         Lewati ke konten
     </a>
 

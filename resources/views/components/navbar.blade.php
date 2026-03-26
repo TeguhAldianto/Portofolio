@@ -1,7 +1,7 @@
 <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 glass-nav">
     <div class="container">
         <div
-            class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-base-900/70 supports-[backdrop-filter]:backdrop-blur-[20px] shadow-soft px-4 md:px-6 py-3">
+            class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-base-900/70 supports-backdrop-filter:backdrop-blur-[20px] shadow-soft px-4 md:px-6 py-3">
             <a href="#" class="flex items-center gap-3 group" data-aos="fade-down">
                 <img src="{{ asset('assets/images/profile.jpg') }}" alt="Foto profil Teguh Aldianto"
                     class="h-10 w-10 rounded-xl object-cover shadow-glow" width="40" height="40" loading="eager"
@@ -54,7 +54,7 @@
         </div>
 
         <div id="mobile-nav"
-            class="hidden mt-2 rounded-2xl border border-white/10 bg-base-900/90 supports-[backdrop-filter]:backdrop-blur-[20px] md:hidden"
+            class="hidden mt-2 rounded-2xl border border-white/10 bg-base-900/90 supports-backdrop-filter:backdrop-blur-[20px] md:hidden"
             data-aos="fade-down">
             <nav class="flex flex-col py-2">
                 <a href="#about"

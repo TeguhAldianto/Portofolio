@@ -13,7 +13,7 @@
 
         <div class="relative">
             <div
-                class="absolute left-8 top-4 bottom-4 w-0.5 bg-gradient-to-b from-primary/60 via-base-700 to-transparent md:left-1/2 md:-ml-px">
+                class="absolute left-8 top-4 bottom-4 w-0.5 bg-linear-to-b from-primary/60 via-base-700 to-transparent md:left-1/2 md:-ml-px">
             </div>
 
             <div class="space-y-12">

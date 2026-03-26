@@ -1,4 +1,4 @@
-<section id="skills" class="py-24 bg-white/[0.03] relative overflow-hidden">
+<section id="skills" class="py-24 bg-white/3 relative overflow-hidden">
     <div class="container">
         <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white mb-4 text-center"
             data-aos="fade-up">

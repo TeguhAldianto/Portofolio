@@ -19,7 +19,7 @@
                     <img src="{{ asset('assets/images/batitune.png') }}" alt="BATITUNE E-Commerce Platform"
                         class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                         loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-base-950 to-transparent"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors mb-2">BATITUNE -
@@ -37,7 +37,7 @@
                         alt="NVBite Carbon Detection App"
                         class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                         loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-base-950 to-transparent"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors mb-2">NVBite –
@@ -54,7 +54,7 @@
                     <img src="{{ asset('assets/images/logoedii.png') }}" alt="Finance Management System"
                         class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                         loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-base-950 to-transparent"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-base-950 to-transparent"></div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors mb-2">Sistem
