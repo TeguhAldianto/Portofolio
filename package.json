@@ -3,6 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "postinstall": "composer install --no-dev --optimize-autoloader --ignore-platform-reqs",
         "build": "vite build",
         "dev": "vite"
     },
