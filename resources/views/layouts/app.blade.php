@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Teguh Aldianto | Software Engineer</title>
     <meta name="description" content="Portfolio Teguh Aldianto - Software Engineer spesialis Full-Stack Web dan Android Development." />
-
+    <meta property="og:title" content="Teguh Aldianto | Software Engineer">
+    <meta property="og:description" content="Portfolio Teguh Aldianto - Software Engineer spesialis Full-Stack Web dan Android Development.">
+    <meta property="og:image" content="{{ asset('assets/images/og-thumbnail.jpg') }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">

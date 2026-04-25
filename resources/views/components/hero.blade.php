@@ -6,20 +6,19 @@
                 class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 text-xs font-medium text-zinc-600 dark:text-zinc-300 mb-8 shadow-sm">
                 <span class="relative flex h-2 w-2">
                     <span
-                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
                 Available for Work
             </div>
 
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
                 Software Engineer.<br />
-                <span class="text-zinc-500 dark:text-zinc-400">Builder of digital experiences.</span>
+                <span class="text-zinc-500 dark:text-zinc-400">Architecting scalable web and mobile solutions.</span>
             </h1>
 
             <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl leading-relaxed">
-                Saya <strong class="text-zinc-900 dark:text-white font-semibold">Teguh Aldianto</strong>. Fokus pada
-                pengembangan aplikasi Web Full-Stack dan Mobile (Android) dengan arsitektur yang clean dan scalable.
+                Saya Teguh Aldianto. Fokus membangun aplikasi skalabel menggunakan Laravel, Vue, dan Kotlin dengan penerapan MVVM & Clean Architecture.
             </p>
 
             <div class="flex flex-wrap items-center gap-4 mb-12">
@@ -44,8 +43,8 @@
             <div class="flex items-center gap-8 pt-6 border-t border-zinc-200 dark:border-white/10">
                 <div>
                     <div class="text-2xl font-bold text-zinc-900 dark:text-white"><span class="counter"
-                            data-target="3.81">0</span></div>
-                    <div class="text-xs text-zinc-500 font-medium uppercase tracking-wider mt-1">IPK Cum Laude</div>
+                            data-target="100">0</span>%</div>
+                    <div class="text-xs text-zinc-500 font-medium uppercase tracking-wider mt-1">Clean Architecture</div>
                 </div>
                 <div>
                     <div class="text-2xl font-bold text-zinc-900 dark:text-white"><span class="counter"

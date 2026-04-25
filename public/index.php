@@ -3,7 +3,6 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
 
 define('LARAVEL_START', microtime(true));
 

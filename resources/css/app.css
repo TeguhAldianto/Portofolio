@@ -3,9 +3,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    /* Pendekatan warna SaaS: Neutral (Zinc) + Accent (Indigo) */
-    --color-primary: #4f46e5;      /* Indigo 600 */
-    --color-primary-hover: #4338ca;
+    /* Tema Elegan Minimalis: Midnight Lavender */
+    --color-primary: #9b7ede;      /* Lavender Accent */
+    --color-primary-dark: #2e1f3e; /* Midnight Dark */
+    --color-primary-hover: #8a6ccc;
     --color-surface: #ffffff;
     --color-surface-dark: #09090b; /* Zinc 950 */
 

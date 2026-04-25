@@ -6,7 +6,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+            <div class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
                     <img src="{{ asset('assets/images/batitune.png') }}" alt="BATITUNE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
                 </div>
@@ -18,11 +18,11 @@
                         <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">MySQL</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+            <div class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative p-4 flex items-center justify-center">
-                    <img src="https://github.com/NV-Bite/.github/raw/main/assets/frame%20mockups.png" alt="NVBite" class="h-full w-auto object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+                    <img src="{{ asset('assets/images/nvbite-mockup.png') }}" alt="NVBite" class="h-full w-auto object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
                 </div>
                 <div class="p-6">
                     <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">NVBite</h3>
@@ -32,9 +32,9 @@
                         <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">MVVM</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="#" class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+            <div class="group block glass-card glass-card-hover overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative flex items-center justify-center p-8">
                     <img src="{{ asset('assets/images/logoedii.png') }}" alt="ERP Cash Management" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" loading="lazy" />
                 </div>
@@ -46,7 +46,7 @@
                         <span class="text-xs font-semibold px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">TALL</span>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
 </section>
