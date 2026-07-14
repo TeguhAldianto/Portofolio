@@ -28,8 +28,9 @@
 
 <body class="relative min-h-screen flex flex-col selection:bg-primary/20 selection:text-primary">
 
-    <div class="fixed inset-0 -z-10 bg-grid-pattern opacity-50 pointer-events-none"></div>
+    <div class="fixed inset-0 -z-10 bg-grid-pattern pointer-events-none"></div>
     <div class="fixed top-0 inset-x-0 h-96 bg-linear-to-b from-white via-white/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80 dark:to-transparent -z-10 pointer-events-none"></div>
+    <div class="fixed inset-x-0 top-1/3 h-96 bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.08)_0%,transparent_70%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.05)_0%,transparent_70%)] -z-10 pointer-events-none"></div>
 
     <x-navbar />
 
