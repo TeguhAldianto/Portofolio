@@ -1,28 +1,12 @@
-import './bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // -----------------------------------------------------------------
-    // AOS INIT
-    // -----------------------------------------------------------------
-    AOS.init({
-        duration: 700,
-        once: true,
-        offset: 80,
-        easing: 'ease-out-cubic',
-        disable: 'mobile',
-    });
+    AOS.init({ duration: 700, once: true, offset: 80, easing: 'ease-out-cubic', disable: 'mobile' });
 
-    // -----------------------------------------------------------------
-    // CURRENT YEAR
-    // -----------------------------------------------------------------
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // -----------------------------------------------------------------
-    // THEME TOGGLE
-    // -----------------------------------------------------------------
     const themeBtn = document.getElementById('theme-toggle');
     const root = document.documentElement;
 
@@ -43,22 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (themeBtn) {
         themeBtn.addEventListener('click', () => {
-            const isCurrentlyDark = root.classList.contains('dark');
-            const nextMode = isCurrentlyDark ? 'light' : 'dark';
+            const nextMode = root.classList.contains('dark') ? 'light' : 'dark';
             localStorage.setItem('theme', nextMode);
             applyTheme(nextMode);
         });
     }
 
-    // -----------------------------------------------------------------
-    // MOBILE NAV
-    // -----------------------------------------------------------------
     const menuBtn = document.getElementById('menu-toggle');
     const mobileNav = document.getElementById('mobile-nav');
     if (menuBtn && mobileNav) {
+        menuBtn.setAttribute('aria-expanded', 'false');
         menuBtn.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
+            const expanded = mobileNav.classList.toggle('hidden');
             menuBtn.classList.toggle('text-primary');
+            menuBtn.setAttribute('aria-expanded', !expanded);
         });
 
         mobileNav.querySelectorAll('a').forEach(link => {
@@ -69,9 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // -----------------------------------------------------------------
-    // NAVBAR SCROLL EFFECT
-    // -----------------------------------------------------------------
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (!navbar) return;
@@ -82,9 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.querySelector('div')?.classList.toggle('dark:bg-zinc-950/90', scrolled);
     }, { passive: true });
 
-    // -----------------------------------------------------------------
-    // COUNTER ANIMATION (Angka)
-    // -----------------------------------------------------------------
     const counters = document.querySelectorAll('.counter');
     const counterIO = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -110,9 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     counters.forEach(c => counterIO.observe(c));
 
-    // -----------------------------------------------------------------
-    // SKILL BAR ANIMATION
-    // -----------------------------------------------------------------
     const skillBars = document.querySelectorAll('.skill-bar-fill');
     const skillIO = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -128,9 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     skillBars.forEach(bar => skillIO.observe(bar));
 
-    // -----------------------------------------------------------------
-    // HERO MOUSE PARALLAX
-    // -----------------------------------------------------------------
     const heroImage = document.querySelector('.hero-parallax');
     const heroSection = document.querySelector('#hero');
 
@@ -148,9 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // -----------------------------------------------------------------
-    // MAGNETIC BUTTONS
-    // -----------------------------------------------------------------
     document.querySelectorAll('.magnetic-btn').forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
             const rect = btn.getBoundingClientRect();
@@ -164,9 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // -----------------------------------------------------------------
-    // TEXT REVEAL ON SCROLL
-    // -----------------------------------------------------------------
     const revealEls = document.querySelectorAll('.reveal-text');
     const revealIO = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -179,9 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealEls.forEach(el => revealIO.observe(el));
 
-    // -----------------------------------------------------------------
-    // BACKGROUND GRID MOUSE PARALLAX
-    // -----------------------------------------------------------------
     const bgGrid = document.querySelector('.bg-grid-pattern');
     if (bgGrid) {
         window.addEventListener('mousemove', (e) => {
@@ -190,5 +151,4 @@ document.addEventListener('DOMContentLoaded', () => {
             bgGrid.style.backgroundPosition = `${x}px ${y}px`;
         });
     }
-
 });

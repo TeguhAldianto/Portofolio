@@ -3,9 +3,9 @@
 
         <a href="/" class="flex items-center gap-2 group">
             <div class="w-8 h-8 rounded-full overflow-hidden ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all duration-300">
-                <img src="{{ asset('assets/images/pp.JPG') }}" alt="Teguh Aldianto"
+                <img src="{{ asset('assets/images/profile.jpg') }}" alt="Teguh Aldianto"
                      class="w-full h-full object-cover"
-                     onerror="this.src='{{ asset('assets/images/profile.jpg') }}'" />
+                     onerror="this.onerror=null;this.src='{{ asset('assets/images/profile.jpg') }}'" />
             </div>
             <span class="hidden sm:block font-display font-bold text-sm text-zinc-900 dark:text-white group-hover:text-primary transition-colors">
                 Teguh Aldianto
@@ -13,20 +13,24 @@
         </a>
 
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="/about" class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors">About</a>
-            <a href="/experience" class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors">Experience</a>
-            <a href="/skills" class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
-            <a href="/projects" class="text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+            @php $current = request()->path(); @endphp
+            <a href="/about" class="{{ $current === 'about' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">About</a>
+            <a href="/certificates" class="{{ $current === 'certificates' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">Certificates</a>
+            <a href="/publications" class="{{ $current === 'publications' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">Publications</a>
+            <a href="/experience" class="{{ $current === 'experience' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">Experience</a>
+            <a href="/projects" class="{{ $current === 'projects' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">Projects</a>
+            <a href="/skills" class="{{ $current === 'skills' ? 'text-primary font-semibold' : 'text-zinc-500 dark:text-zinc-400 hover:text-primary dark:hover:text-primary' }} transition-colors">Skills</a>
         </nav>
 
         <div class="flex items-center gap-3 border-l border-zinc-200 dark:border-zinc-800 pl-4">
             <button id="theme-toggle" aria-label="Toggle Theme" class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary transition-colors">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
             </button>
             <a href="/contact" class="hidden md:block btn-primary py-1.5 px-4 text-xs magnetic-btn">
                 Let's Talk
             </a>
 
-            <button id="menu-toggle" class="md:hidden text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary transition-colors">
+            <button id="menu-toggle" aria-expanded="false" class="md:hidden text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
             </button>
         </div>
@@ -35,10 +39,13 @@
 
 <div id="mobile-nav" class="hidden fixed inset-x-4 top-24 z-40 glass-card p-4 animate-scale-in">
     <nav class="flex flex-col gap-4">
-        <a href="/about" class="p-2 font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors rounded-lg hover:bg-primary/5">About</a>
-        <a href="/experience" class="p-2 font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors rounded-lg hover:bg-primary/5">Experience</a>
-        <a href="/skills" class="p-2 font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors rounded-lg hover:bg-primary/5">Skills</a>
-        <a href="/projects" class="p-2 font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors rounded-lg hover:bg-primary/5">Projects</a>
-        <a href="/contact" class="p-2 font-medium text-primary bg-primary/5 rounded-lg">Contact</a>
+        @php $current = request()->path(); @endphp
+        <a href="/about" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'about' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">About</a>
+        <a href="/certificates" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'certificates' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Certificates</a>
+        <a href="/publications" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'publications' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Publications</a>
+        <a href="/experience" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'experience' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Experience</a>
+        <a href="/projects" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'projects' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Projects</a>
+        <a href="/skills" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'skills' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Skills</a>
+        <a href="/contact" class="p-2 font-medium rounded-lg transition-colors {{ $current === 'contact' ? 'text-primary bg-primary/10' : 'text-zinc-600 dark:text-zinc-300 hover:text-primary dark:hover:text-primary hover:bg-primary/5' }}">Contact</a>
     </nav>
 </div>

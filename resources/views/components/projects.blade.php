@@ -1,5 +1,5 @@
-<section id="projects" class="py-32 bg-zinc-100/50 dark:bg-zinc-900/10 relative">
-    <div class="container">
+<section id="projects" class="py-16 md:py-20 bg-zinc-100/50 dark:bg-zinc-900/10 relative">
+    <div class="site-container">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12" data-aos="fade-up">
             <div>
                 <h2 class="text-3xl md:text-4xl font-extrabold mb-2">
@@ -15,12 +15,12 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="group gradient-border-card glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+            <div class="group glass-card overflow-hidden glass-card-hover" data-aos="fade-up" data-aos-delay="100">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
                     <img src="{{ asset('assets/images/batitune.png') }}" alt="BATITUNE"
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" />
-                    <div class="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                        <span class="text-white text-sm font-medium">View Project →</span>
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" onerror="this.onerror=null;this.style.display='none'" />
+                    <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span class="text-white text-sm font-medium tracking-wide">View Project →</span>
                     </div>
                 </div>
                 <div class="p-6">
@@ -33,12 +33,12 @@
                 </div>
             </div>
 
-            <div class="group gradient-border-card glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+            <div class="group glass-card overflow-hidden glass-card-hover" data-aos="fade-up" data-aos-delay="200">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative p-4 flex items-center justify-center">
                     <img src="{{ asset('assets/images/nvbite-mockup.png') }}" alt="NVBite"
-                         class="h-full w-auto object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" />
-                    <div class="absolute inset-0 bg-linear-to-t from-accent/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                        <span class="text-white text-sm font-medium">View Project →</span>
+                         class="h-full w-auto object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" onerror="this.onerror=null;this.style.display='none'" />
+                    <div class="absolute inset-0 bg-linear-to-t from-accent/80 via-accent/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span class="text-white text-sm font-medium tracking-wide">View Project →</span>
                     </div>
                 </div>
                 <div class="p-6">
@@ -51,12 +51,12 @@
                 </div>
             </div>
 
-            <div class="group gradient-border-card glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+            <div class="group glass-card overflow-hidden glass-card-hover" data-aos="fade-up" data-aos-delay="300">
                 <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative flex items-center justify-center p-8">
                     <img src="{{ asset('assets/images/logoedii.png') }}" alt="ERP Cash Management"
-                         class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0" loading="lazy" />
-                    <div class="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                        <span class="text-white text-sm font-medium">View Project →</span>
+                         class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" onerror="this.onerror=null;this.style.display='none'" />
+                    <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span class="text-white text-sm font-medium tracking-wide">View Project →</span>
                     </div>
                 </div>
                 <div class="p-6">
@@ -65,6 +65,25 @@
                     <div class="flex gap-2 flex-wrap">
                         <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary">Filament</span>
                         <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-accent/10 text-accent">TALL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group glass-card overflow-hidden glass-card-hover" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-56 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                    <img src="{{ asset('assets/images/kos-mahasiswi.jpg') }}" alt="KOS Mahasiswi"
+                         class="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" onerror="this.onerror=null;this.style.display='none'" />
+                    <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span class="text-white text-sm font-medium tracking-wide">View Project →</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-2">KOS Mahasiswi</h3>
+                    <p class="text-sm text-zinc-500 line-clamp-2 mb-4">Boarding house management system dengan admin dashboard, auth custom, dan PDF receipt — Next.js 16 + Prisma + MariaDB.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary">Next.js</span>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-accent/10 text-accent">Prisma</span>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary">MariaDB</span>
                     </div>
                 </div>
             </div>
